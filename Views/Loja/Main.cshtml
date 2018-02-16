@@ -1,0 +1,32 @@
+@{
+    ViewData["Title"] = "Main page";
+}
+<div class="row">
+    <div class="col-md-12">
+        <h1>Titulo</h1>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+        <h1>Nome</h1>
+    </div>
+    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+        <h1>Descrição</h1>
+    </div>
+</div>
+<div class="row">
+    @for (int i = 0; i < 20; i++)
+    {
+        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+            <p>Nome @(i)</p>
+        </div>
+        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+            <p>Descricao @(i)</p>
+        </div>
+    }
+</div>
+
+<div class="row">
+    
+</div>
